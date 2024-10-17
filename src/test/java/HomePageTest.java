@@ -8,7 +8,7 @@ import io.cucumber.testng.CucumberOptions;
 //@RunWith(Cucumber.class) //Junit execution
 
 @CucumberOptions(features = { "src/test/resources/Home_page.feature" }, 
-plugin = {"html:test-output/home-page.html"}
+plugin = {"html:test-output/home-page.html", "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"}
 , glue = { "homePage", "infrastructure" })
 
 public class HomePageTest extends AbstractTestNGCucumberTests {
